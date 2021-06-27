@@ -1,12 +1,31 @@
 <!DOCTYPE html>
  <html lang ='en'>
+  <style type="text/css">
+		.container{
+			width:800px;
+			margin:auto;
+			border: 1px dashed #555;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		#demo{
+			background: cyan;
+			width: 20px;
+			padding: 5px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+	</style>
  <body>
  <head>
   <title>SPINNER </title>
+  <div class="container">
+	<h2>Cara Mengacak Angka dari Satu Sampai Seratus dengan Javascript</h2>
+	<p id="demo"></p>
+	<p>Slihakan teman-teman refresh untuk mendapatkan angka random baru</p>
+</div>
   <script>
-  var nom = /^[1-99]$/
-  var has = nom[Math.floor(Math.random() * nom.length)]
-  <p>has</p>
+document.getElementById("demo").innerHTML =	Math.floor(Math.random() * 101)
   </script>
   </head>
    </body>
