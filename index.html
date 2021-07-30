@@ -26,9 +26,7 @@
 </script>
   
   <body>
-  	
-  <script type='text/javascript' src='//pl16456111.highperformancecpm.com/0f/90/36/0f90362d2c35c577697196208a242419.js'></script>
-
+  
   	<style type="text/css">
   h1,h2,p,a{
 		font-family: sans-serif;
@@ -107,8 +105,8 @@
 		}
 		
 		* {box-sizing: border-box}
-      body {font-family: Verdana,sans-serif;}
-
+     /* body {font-family: Verdana,sans-serif;}
+*/
 .mySlides {display:none}
 
 .slideshow-container {
@@ -171,6 +169,21 @@
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px
 	}
+	
+.blink {
+animation: blink-animation 1s steps(5, start) infinite;
+-webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+@keyframes blink-animation {
+     to {
+      visibility: hidden;
+   }
+ }
+@-webkit-keyframes blink-animation {
+       to {
+       visibility: hidden;
+      }
+}
 </style>
 
   <audio autoplay="true" loop="true">
@@ -193,14 +206,17 @@
 <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="http://rdpvps.me/home/#" role="button" aria-haspopup="false" aria-expanded="false">
 <i class="fa fa-bars" style="color: white"></i>
 </a>
-<div class="dropdown-menu dropdown-menu-right" style="background: transparent; border: 1px solid white">
+<div class="dropdown-menu dropdown-menu-right" style="background: transparent; border: 1px solid white;">
 <!--<a href="https://dhans-project.xyz"><img src="https://dhans-project.xyz/kon.png" align="left" height="60px" width="320px"></a>-->
 <a class="dropdown-item" href="https://dhans-project.xyz" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-exit text-muted mr-2"></i> Home</a>
 <a class="dropdown-item" href="https://dhans-project.xyz/server/gcp-sg" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-exit text-muted mr-2"></i> Server GCP SG</a>
 <a class="dropdown-item" href="https://dhans-project.xyz/server/gcp-id" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Server GCP ID</a>
+<!--
 <a class="dropdown-item" href="https://dhans-project.xyz/server/aws-sg" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Server AWS SG</a>
+-->
 <a class="dropdown-item" href="https://dhans-project.xyz/server/linode-sg" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Server Linode SG</a>
-<a class="dropdown-item" href="https://dhans-project.xyz/server" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Status Server</a>
+<a class="dropdown-item" href="https://dhans-project.xyz/server" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Info Server</a>
+<a class="dropdown-item" href="https://dhans-project.xyz/service" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Info Service</a>
 <!--<a class="dropdown-item" href="https://dhans-project.xyz/server/trial"><i class="fa fa-exchange"></i><i class="dripicons-user text-muted mr-2"></i> Free Trial</a>-->
 <a class="dropdown-item" href="https://dhans-project.xyz/service/auto-script" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-exit text-muted mr-2"></i> AutoScript VPS </a>
 <a class="dropdown-item" href="https://dhans-project.xyz/service/speedtest" style="color: white"><i class="fa fa-exchange"></i><i class="dripicons-exit text-muted mr-2"></i> Speedtest</a>
@@ -216,21 +232,33 @@
           <div class="col-md-12">
           	<img src="https://dhans-project.xyz/999.png" height="230px" width="330px"></img>
             <img src="https://dhans-project.xyz/hans.png" height="80px" width="335px"></img>
-            <marquee direction="left" vspace="10"><b style="color: silver;"><strong>Produk Kami Dijamin 100% Sangat Aman Dan Terpercaya</strong></b></marquee>
-            
+   <!--         <marquee direction="left" vspace="10"><b style="color: silver;"><strong>Produk Kami Dijamin 100% Sangat Aman Dan Terpercaya</strong></b></marquee>
+   -->         
           </div>
         </div>
   
       </div>
     </div>
-    
-       <footer>
+    <footer>
        	       <center>
        	
+    <!--  IKLAN -->
+    <script type="text/javascript">
+	atOptions = {
+		'key' : 'a7a334bcafc401491ae5d204b499e55e',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformat.com/a7a334bcafc401491ae5d204b499e55e/invoke.js"></scr' + 'ipt>');
+</script>
+
+       
        <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
              	<center>
-             	<h6 style="font-size: 25px; color: white; background: url(https://dhans-project.xyz/7777.jpg); width: 150px; border: 0.1px solid white; border-radius: 5px">WAKTU SEKARANG</h6>
+             	<h6 style="font-family: serif;font-size: 25px; color: white; background: url(https://dhans-project.xyz/7777.jpg); width: 150px; border: 0.1px solid white; border-radius: 5px">WAKTU SEKARANG</h6>
         </center>
         <div class="garis"></div>
            <div class="jam_analog">
@@ -246,18 +274,24 @@
   <div id="tgl"></div>
              </div>
              </center>
+             <!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
              <div class="col-md-12">
           <div class="sub-footer">
           	</div>
           </div>
        <center>
-       	
+ 
        <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
-              <h4>Google Cloud Platform</h4>
+             	<div style="background: silver; width: 100%; height: 1px; margin: 20px 0px 1px 0px"></div> 
+              <h4 style="font-family:serif;background:url(https://dhans-project.xyz/7777.jpg);border-radius:5px;">Google Cloud Platform</h4>
+              
               <div class="price">
               <h6>GCP</h6>
-              <span>SINGAPORE</span>
+              <img src="sg.jpeg" style="width: 70px; height: 40px; border: 1px solid white; border-radius: 5px; margin: 7px 0px 5px 0px"></img> 
               </div>
           <div class="dev"></div> 
     <table class="table table-bordered" style="background: url(https://dhans-project.xyz/7777.jpg)"; width="100%" cellspacing="0">
@@ -288,25 +322,33 @@
           </div>
           </div>
           </center>
+          
+          <!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
           <div class="col-md-12">
           <div class="sub-footer">
           	</div>
           </div>
-         <center>
+          
+    <center>
          	
           <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
-              <h4>Google Cloud Platform</h4>
+              <div style="background: silver; width: 100%; height: 1px; margin: 20px 0px 1px 0px"></div> 
+              <h4 style="font-family:serif;background:url(https://dhans-project.xyz/7777.jpg);border-radius:5px;">Google Cloud Platform</h4>
+              
               <div class="price">
               <h6>GCP</h6>
-              <span>INDONESIA</span>
+              <img src="ind.jpeg" style="width: 70px; height: 40px; border: 1px solid white; border-radius: 5px; margin: 7px 0px 5px 0px"></img> 
               </div>           
                <div class="dev"></div> 
              <table class="table table-bordered" style="background: url(https://dhans-project.xyz/7777.jpg)"; width="100%" cellspacing="0">
 <tbody>
 <tr>
 <th><font color="white">Status</th>
-<th><a rel="nofollow" href="https://dhans-project.xyz/server/gcp-id"><font color="red">Habis!</font></a></th>
+<th><a rel="nofollow" href="https://dhans-project.xyz/server/gcp-id"><font color="#00ff00">Tersedia</font></a></th>
 </tr>
 <tr>
 <th><font color="white">Tipe</th>
@@ -314,7 +356,7 @@
 </tr>
 <tr>
 <th><font color="white">Slot</th>
-<th><a rel="nofollow" href="https://dhans-project.xyz/server/gcp-id"><font color="red">0</font> <font color="white">Akun</font></a></th>
+<th><a rel="nofollow" href="https://dhans-project.xyz/server/gcp-id"><font color="#00ff00">20</font> <font color="white">Akun</font></a></th>
 </tr>
 <tr>
 <th><font color="white">Owner</th>
@@ -328,12 +370,19 @@
           
           </div>
           </center>
+          
+          <!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
           <div class="col-md-12">
           <div class="sub-footer">
           	</div>
           </div>
           	</div>
           </div>
+          
+          <!--
          <center>
           <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
@@ -369,18 +418,23 @@
         </div>
           </div>
 </center>
-          <div class="col-md-12">
-          <div class="sub-footer">
-          	</div>
-          </div>
+
+<!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
+          
+          
          <center>
           
           <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
-              <h4>Linode</h4>
+              <div style="background: silver; width: 100%; height: 1px; margin: 20px 0px 1px 0px"></div> 
+              <h4 style="font-family:serif;background:url(https://dhans-project.xyz/7777.jpg);border-radius:5px;">linode</h4>
+              
               <div class="price">
                <h6>LINODE</h6>
-              <span>SINGAPORE</span>
+              <img src="sg.jpeg" style="width: 70px; height: 40px; border: 1px solid white; border-radius: 5px; margin: 7px 0px 5px 0px"></img> 
               </div>           
                 <div class="dev"></div> 
              <table class="table table-bordered" style="background: url(https://dhans-project.xyz/7777.jpg)"; width="100%" cellspacing="0">
@@ -409,6 +463,10 @@
           </div>
       </center>
 
+<!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
           <div class="col-md-12">
           <div class="sub-footer">
           	</div>
@@ -416,7 +474,9 @@
          <center>
           <div class="col-md-4 col-sm-6 col-xs-12">
              <div class="pricing-item">
-              <h4>AutoScript Premium</h4>
+              <div style="background: silver; width: 100%; height: 1px; margin: 20px 0px 1px 0px"></div> 
+              <h4 style="font-family:serif;background:url(https://dhans-project.xyz/7777.jpg);border-radius:5px;">autoscript premium</h4>
+              
               <div class="price">
               <h6>SC VPS</h6>
                </div>           
@@ -447,84 +507,48 @@
           </div>
           </center>
 
+<!--  IKLAN  -->
+<script async="async" data-cfasync="false" src="//pl16463028.highperformancecpm.com/0c351fa1976b584d582d78ee39ae646e/invoke.js"></script>
+<div id="container-0c351fa1976b584d582d78ee39ae646e"></div>
+            
          <div class="col-md-12">
           <div class="sub-footer">
           	</div>
           </div>
+          
           <center>
           <div class="col-md-4 col-sm-6 col-xs-12">
-             <div class="pricing-item">
+             <div class="pricing-item" id="#testimoni">
              	<center>
-             	<h6 style="font-size: 30px; color: white; background: url(https://dhans-project.xyz/7777.jpg); width: 150px; border-radius: 5px">TESTIMONI</h6>
+             	<h6 style="font-family: serif; font-size: 30px; color: white; background: url(https://dhans-project.xyz/7777.jpg); width: 180px; border-radius: 5px">TESTIMONI</h6>
              </center>
               <div class="garis"></div>
-<!--<div class="slider">
-		<figure>
-			<div class="slide">
-<img src="https://cdn.stocksnap.io/img-thumbs/960w/NV5A5D7JPU.jpg">
-			</div>
 
-			<div class="slide">
-				<img src="https://cdn.stocksnap.io/img-thumbs/960w/3EXIOEFB53.jpg">
-			</div>
-
-			<div class="slide">
-				<img src="https://cdn.stocksnap.io/img-thumbs/960w/ONPRW7FMP7.jpg">
-			</div>
-
-			<div class="slide">
-				<img src="https://cdn.stocksnap.io/img-thumbs/960w/NMHVXCOPGH.jpg">
-			</div>
-
-			<div class="slide">
-				<img src="https://cdn.stocksnap.io/img-thumbs/960w/LRCLSUE3EV.jpg">
-			</div>
-		</figure>
-	</div>
--->
-          <div class="slideshow-container" id="testimoni">
-
-<div class="mySlides fade">
-<!--  <div class="numbertext">1 / 3</div>-->
-  <img src="https://dhans-project.xyz/3.jpg" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
-<!--  <div class="text">Caption Text</div>-->
-</div>
-
-
-<div class="mySlides fade">
-<!--  <div class="numbertext">2 / 3</div>-->
-  <img src="https://dhans-project.xyz/2.png" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
-<!--  <div class="text">Caption Two</div>-->
-</div>
-
-<div class="mySlides fade">
-<!--  <div class="numbertext">3 / 3</div>-->
-  <img src="https://dhans-project.xyz/1.jpg" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
- <!-- <div class="text">Caption Three</div>-->
-</div>
-<!--
-<div class="mySlides fade">
-   <img src="https://dhans-project.xyz/4.png" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
-</div>
--->
-
-<div class="mySlides fade">
-   <img src="https://dhans-project.xyz/5.png" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
-</div>
-<!--  
-<div class="mySlides fade">
-   <img src="https://dhans-project.xyz/6.png" style="border: 1px solid white; border-radius: 5px; height: 200px; width: 200px">
-</div>
--->
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div> 
-</div>
-</div>
+          
+            <div class="owl-testimonials owl-carousel">
+            	<div class="testimonial-item">
+                <img src="https://dhans-project.xyz/1.jpg" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+            	<div class="testimonial-item">
+                <img src="https://dhans-project.xyz/2.png" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+              <div class="testimonial-item">
+                <img src="https://dhans-project.xyz/3.jpg" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+              <div class="testimonial-item">
+                <img src="https://dhans-project.xyz/4.png" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+              <div class="testimonial-item">
+                <img src="https://dhans-project.xyz/5.png" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+              <div class="testimonial-item">
+                <img src="https://dhans-project.xyz/6.png" style="border: 1px solid white; border-radius: 5px; height: 245px; width: 228px">
+              </div>
+      </div>
+    </div>
+    </div>
+    
+    	
        </center>
        <div class="col-md-12">
           <div class="sub-footer">
@@ -658,7 +682,15 @@ function showSlides() {
 	
 	
 </script>
+<!--
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
+<script>
+setInterval(function(){
+$(".berkedip").toggle();
+},300);
+</script>
+-->
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; 
       function clearField(t){ 
