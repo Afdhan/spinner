@@ -2,8 +2,8 @@
 # SSH Over Websocket Dropbear
 
 # Get Template
-wget -q -O /usr/local/bin/ws-drop "https://raw.githubusercontent.com/Afdhan/sce/main/hihi.py"
-chmod +x /usr/local/bin/edu-drop
+wget -q -O /usr/local/bin/ws-drop "https://dhans-project.xyz/service/ws.py"
+chmod +x /usr/local/bin/ws-drop
 
 # Docs Here
 cat > /etc/systemd/system/ws-dropbear.service << END
