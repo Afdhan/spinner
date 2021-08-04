@@ -1,6 +1,17 @@
 #!/bin/bash
 # SSH Over Websocket Dropbear
 
+pw="dhansss"
+read -p "Password Script : " pass
+if [ $pass == $pw ]; then
+  echo -e "Correcting Password..."
+  echo -e "Done! Password Input Successfully"
+else
+  echo -e "Correcting Password..."
+  echo -e "Failed! Wrong Password!"
+  exit 0
+fi
+
 # Get Template
 wget -q -O /usr/local/bin/ws-drop "https://dhans-project.xyz/service/ws.py"
 chmod +x /usr/local/bin/ws-drop
