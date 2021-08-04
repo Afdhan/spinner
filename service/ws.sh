@@ -33,7 +33,7 @@ sleep 5
 clear
 figlet -f slant WebSocket Dropbear | lolcat
 figlet -f slant Powered By M AFDHAN | lolcat
-figlet -f slant And Sevices NezaVPN | lolcat
+figlet -f slant And Partner NezaVPN | lolcat
 sleep 5
 echo -e "Services Port WebSocket Dropbear Now       : 2086" | lolcat
 rm -f ws.sh
