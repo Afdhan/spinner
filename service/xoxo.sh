@@ -75,7 +75,7 @@ systemctl enable autosett
 wget -O /etc/set.sh "https://raw.githubusercontent.com/Afdhan/sc/main/set.sh"
 chmod +x /etc/set.sh
 wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install.sh
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/uwwu.sh && chmod +x uwwu.sh && ./uwwu.sh
+#wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/uwwu.sh && chmod +x uwwu.sh && ./uwwu.sh
 history -c
 echo "1.1.1" > /home/ver
 clear
