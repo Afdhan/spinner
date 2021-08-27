@@ -80,7 +80,6 @@ systemctl enable autosett
 wget -O /etc/set.sh "https://raw.githubusercontent.com/Afdhan/sc/main/set.sh"
 chmod +x /etc/set.sh
 sleep 0.5
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/uwwu.sh && chmod +x uwwu.sh && ./uwwu.sh
 history -c
 echo "1.1.1" > /home/ver
 clear
