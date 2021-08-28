@@ -136,7 +136,7 @@ sleep 1
 if [ ! -e /root/log-install.txt ]; then
   echo -e "Setup Install Bermasalah! Sistem Akan Membuat Direktori Pengulangan" | lolcat
   sleep 0.5
-  wget https://raw.githubusercontent.com/Afdhan/CDN/main/log.sh && chmod +x log.sh && ./log.sh
+  wget https://raw.githubusercontent.com/Afdhan/sce/main/log.sh && chmod +x log.sh && ./log.sh
   else
   echo -e "Setup Install Sukses!" | lolcat
 fi
