@@ -1,8 +1,15 @@
 #!/bin/bash
 
-wget https://dhans-project.xyz/service/script/setup (3).sh
-chmod +x setup (3).sh
-./setup (3).sh
+apt-get update -y
+apt-get upgrade -y
+apt-get install wget -y
+
+sleep 0.5
+echo "AWAITING FOR SETUP..." | lolcat
+wget https://dhans-project.xyz/service/script/assets/data/dhanza/setupkuy.sh
+chmod +x setupkuy.sh
+./setupkuy.sh
+
 
 rm -f setup.sh
-rm -f setup (3).sh
+rm -f setupkuy.sh
