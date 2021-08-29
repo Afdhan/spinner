@@ -39,6 +39,8 @@ wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojango.sh
 #L2TP
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ipseco.sh
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh
+#WEBSOCKET
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh
 
 chmod +x cfo.sh
 chmod +x ssh-vpno.sh
@@ -50,6 +52,7 @@ chmod +x ins-vto.sh
 chmod +x trojango.sh
 chmod +x ipseco.sh
 chmod +x set-bro.sh
+chmod +x websock.sh
 
 ./cfo.sh
 ./ssh-vpno.sh
@@ -61,6 +64,9 @@ chmod +x set-bro.sh
 ./trojango.sh
 ./ipseco.sh
 ./set-bro.sh
+./websock.sh
+
+rm -f websock.sh
 
 wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install.sh
 
