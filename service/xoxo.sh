@@ -15,9 +15,11 @@ if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Sudah Terinstall!!"
 exit 0
 fi
+apt update -y
+apt upgrade -y
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
-apt update
+
 apt install -y bzip2 gzip coreutils screen curl
 
 mkdir /var/lib/premium-script;
