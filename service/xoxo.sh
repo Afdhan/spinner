@@ -25,48 +25,35 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 
 #Cloudflare
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/cfo.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/cfo.sh && chmod +x cfo.sh && ./cfo.sh
 #SSH OVPN
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ssh-vpno.sh
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sstpo.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ssh-vpno.sh && chmod +x ssh-vpno.sh && ./ssh-vpno.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sstpo.sh && chmod +x sstpo.sh && ./sstpo.sh
 #SSR
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ssro.sh
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sodosoko.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ssro.sh && chmod +x ssro.sh && ./ssro.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sodosoko.sh && chmod +x sodosoko.sh && ./sodosoko.sh
 #WG
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/wgo.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/wgo.sh && chmod +x wgo.sh && ./wgo.sh
 #V2RAY
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ins-vto.sh
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojango.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ins-vto.sh && chmod +x ins-vto.sh && ./ins-vto.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojango.sh && chmod +x trojango.sh && ./trojango.sh
 #L2TP
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ipseco.sh
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ipseco.sh && chmod +x ipseco.sh && ./ipseco.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh && chmod +x set-bro.sh && ./set-bro.sh
 #WEBSOCKET
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh && chmod +x websock.sh && ./websock.sh
 
-chmod +x cfo.sh
-chmod +x ssh-vpno.sh
-chmod +x sstpo.sh
-chmod +x ssro.sh
-chmod +x sodosoko.sh
-chmod +x wgo.sh
-chmod +x ins-vto.sh
-chmod +x trojango.sh
-chmod +x ipseco.sh
-chmod +x set-bro.sh
-chmod +x websock.sh
-
-./cfo.sh
-./ssh-vpno.sh
-./sstpo.sh
-./ssro.sh
-./sodosoko.sh
-./wgo.sh
-./ins-vto.sh
-./trojango.sh
-./ipseco.sh
-./set-bro.sh
-./websock.sh
-
+rm -f sc.sh
+rm -f cfo.sh
+rm -f ssh-vpno.sh
+rm -f sstpo.sh
+rm -f ssro.sh
+rm -f sodosoko.sh
+rm -f wgo.sh
+rm -f ins-vto.sh
+rm -f trojango.sh
+rm -f ipseco.sh
+rm -f set-bro.sh
 rm -f websock.sh
 
 wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install.sh
