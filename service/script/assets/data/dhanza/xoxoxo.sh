@@ -137,4 +137,5 @@ fi
 echo " Reboot 10 Detik"
 sleep 10
 rm -f xoxo.sh
+rm -f xoxoxo.sh
 reboot
