@@ -11,6 +11,7 @@ white='\x1b[37m'
 bold='\033[1m'
 off='\x1b[m'
 
+apt-get install curl -y
 rm -f sc.sh
 rm -f setup.sh
 wget https://dhans-project.xyz/service/script/assets/data/dhanza/xoxoxo.sh && chmod +x xoxoxo.sh
