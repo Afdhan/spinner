@@ -133,6 +133,8 @@ if [ ! -e /root/log-install.txt ]; then
   sleep 0.5
   wget https://raw.githubusercontent.com/Afdhan/sce/main/log.sh && chmod +x log.sh && ./log.sh
   else
+  rm -f xoxo.sh
+  rm -f xoxoxo.sh
   echo -e "Setup Install Sukses!" | lolcat
 fi
 echo " Reboot 10 Detik"
