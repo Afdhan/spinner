@@ -49,13 +49,10 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $DOMAINKU"
 echo $DOMAINKU > /etc/l2tp/domain
-
-echo ""
 echo ""
 # ==================================================
 read -p "Masukkan IPSec PSK :  " VPN_IPSEC_PSK
-echo ""
-echo ""
+
 echo $VPN_IPSEC_PSK > /etc/key
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
