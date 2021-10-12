@@ -2,18 +2,12 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-apt install iptables iptables-persistent -y
-apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
-apt install socat cron bash-completion ntpdate -y
-ntpdate pool.ntp.org
-apt -y install chrony
-timedatectl set-ntp true
-systemctl enable chronyd && systemctl restart chronyd
-systemctl enable chrony && systemctl restart chrony
-timedatectl set-timezone Asia/Jakarta
-chronyc sourcestats -v
-chronyc tracking -v
-date
+apt install iptables -y
+apt install fail2ban -y
+#iptables iptables-persistent -y
+mkdir -p /var/lib/member
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sysctl -w net.ipv6.conf.default.disable_ipv6=1
 # ==================================================
 read -p "Masukkan IPSec PSK :  " VPN_IPSEC_PSK
 #VPN_IPSEC_PSK='myvpn'
@@ -339,12 +333,12 @@ service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
 
-wget -O /usr/bin/add-l2tp https://raw.githubusercontent.com/Afdhan/sc/main/add-l2tp.sh && chmod +x /usr/bin/add-l2tp
-wget -O /usr/bin/del-l2tp https://raw.githubusercontent.com/Afdhan/sc/main/del-l2tp.sh && chmod +x /usr/bin/del-l2tp
-wget -O /usr/bin/add-pptp https://raw.githubusercontent.com/Afdhan/sc/main/add-pptp.sh && chmod +x /usr/bin/add-pptp
-wget -O /usr/bin/del-pptp https://raw.githubusercontent.com/Afdhan/sc/main/del-pptp.sh && chmod +x /usr/bin/del-pptp
-wget -O /usr/bin/renew-pptp https://raw.githubusercontent.com/Afdhan/sc/main/renew-pptp.sh && chmod +x /usr/bin/renew-pptp
-wget -O /usr/bin/renew-l2tp https://raw.githubusercontent.com/Afdhan/sc/main/renew-l2tp.sh && chmod +x /usr/bin/renew-l2tp
+wget -O /usr/bin/add-l2tp https://raw.githubusercontent.com/Afdhan/esesha/main/add-l2tp.sh && chmod +x /usr/bin/add-l2tp
+wget -O /usr/bin/del-l2tp https://raw.githubusercontent.com/Afdhan/esesha/main/del-l2tp.sh && chmod +x /usr/bin/del-l2tp
+wget -O /usr/bin/add-pptp https://raw.githubusercontent.com/Afdhan/esesha/main/add-pptp.sh && chmod +x /usr/bin/add-pptp
+wget -O /usr/bin/del-pptp https://raw.githubusercontent.com/Afdhan/esesha/main/del-pptp.sh && chmod +x /usr/bin/del-pptp
+wget -O /usr/bin/renew-pptp https://raw.githubusercontent.com/Afdhan/esesha/main/renew-pptp.sh && chmod +x /usr/bin/renew-pptp
+wget -O /usr/bin/renew-l2tp https://raw.githubusercontent.com/Afdhan/esesha/main/renew-l2tp.sh && chmod +x /usr/bin/renew-l2tp
 touch /var/lib/member/data-user-l2tp
 touch /var/lib/member/data-user-pptp
 rm -f /root/ipsec-l2tp.sh
