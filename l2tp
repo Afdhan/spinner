@@ -57,7 +57,7 @@ read -p "Masukkan IPSec PSK :  " VPN_IPSEC_PSK
 echo ""
 echo ""
 echo $VPN_IPSEC_PSK > /etc/key
-#NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
+NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 source /etc/os-release
 OS=$ID
