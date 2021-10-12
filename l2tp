@@ -8,6 +8,7 @@ apt install fail2ban -y
 mkdir -p /var/lib/member
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
 # ==================================================
 read -p "Masukkan IPSec PSK :  " VPN_IPSEC_PSK
 #VPN_IPSEC_PSK='myvpn'
