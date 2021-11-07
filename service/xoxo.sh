@@ -14,7 +14,6 @@ off='\x1b[m'
 apt-get install curl -y
 rm -f sc.sh
 rm -f setup.sh
-wget https://dhans-project.xyz/service/script/assets/data/dhanza/xoxoxo.sh && chmod +x xoxoxo.sh
 echo -e "${blue}"
 read -p ' Masukkan Key Lisensi : ' pw
 echo -e "${off}"
@@ -24,6 +23,7 @@ if [ $pw = $pass ]; then
     sleep 0.5
     echo -e "${green} Sukses Verifikasi Lisensi!${off}"
     sleep 0.5
+    wget https://dhans-project.xyz/service/script/assets/data/dhanza/xoxoxo.sh && chmod +x xoxoxo.sh
     ./xoxoxo.sh
 else 
     clear
@@ -32,8 +32,10 @@ else
     sleep 2
     rm -f xoxoxo.sh
     rm -f xoxo.sh
+    rm -f setup.sh
     exit 0
 fi
 
 rm -f xoxo.sh
 rm -f xoxoxo.sh
+rm -f setup.sh
