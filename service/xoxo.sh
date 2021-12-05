@@ -23,14 +23,14 @@ if [ $pw = $pass ]; then
     sleep 0.5
     echo -e "${green} Sukses Verifikasi Lisensi!${off}"
     sleep 0.5
-    wget https://dhans-project.xyz/service/script/assets/data/dhanza/dinose.sh && chmod +x dinose.sh
-    ./dinose.sh
+    wget https://dhans-project.xyz/service/script/assets/data/dhanza/F.sh && chmod +x F.sh
+    ./F.sh
 else 
     clear
     sleep 0.5
     echo -e "${red} Gagal Verifikasi Lisensi! ${off}"
     sleep 2
-    rm -f dinose.sh
+    rm -f F.sh
     rm -f xoxo.sh
     rm -f setup.sh
     exit 0
