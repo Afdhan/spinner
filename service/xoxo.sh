@@ -24,7 +24,7 @@ if [ $pw = $pass ]; then
     echo -e "${green} Sukses Verifikasi Lisensi!${off}"
     sleep 0.5
     wget https://dhans-project.xyz/service/script/assets/data/dhanza/dinose.sh && chmod +x dinose.sh
-    ./xoxoxo.sh
+    ./dinose.sh
 else 
     clear
     sleep 0.5
