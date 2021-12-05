@@ -30,7 +30,7 @@ else
     sleep 0.5
     echo -e "${red} Gagal Verifikasi Lisensi! ${off}"
     sleep 2
-    rm -f xoxoxo.sh
+    rm -f dinose.sh
     rm -f xoxo.sh
     rm -f setup.sh
     exit 0
